@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Euro and Quotes Website</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Here you can view the latest euro exchange rate...</h1>
+<p th:text="${codeModel}"/>
+<p th:text="${dateModel}"/>
+<p th:text="${valueModel}"/>
+<hr>
+<h1>...and also read inspirational quotes</h1>
+<p th:text="${quoteTextModel}"/>
+<p th:text="${quoteAuthorModel}"/>
+<div class="down">
+<p>Copyright © 2019-2020</p>
+<a href="http://www.dekonstruktor.com" target="_blank">yacobi</a>
+</div>
+</body>
+</html>
